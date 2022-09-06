@@ -1,0 +1,14 @@
+$page_width: 114mm; /* 印刷版面 - 縦 */
+$page_height: 182mm; /* 印刷版面 - 横 */
+$topmargin:12mm; /*天*/
+$bottommargin:14mm; /*地*/
+$lrmargin:10mm; /*小口*/
+$bindmargin:15mm; /*ノド*/
+
+/*タチキリ関連*/
+$use_bleed: true; /* trueで印刷所入稿用 */
+$bleedmargin:3mm; /*塗り足し*/
+
+/*本文仕様*/
+$body_letter_size: 3mm;/* 8.5pt _ 12Q */
+$body_line_height: 5.3mm;

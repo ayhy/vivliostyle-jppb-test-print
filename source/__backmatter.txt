@@ -1,0 +1,38 @@
+<!--奥付-->
+# {role=colophon} 
+
+
+:::{.title}
+文体操舵録
+:::
+----
+2022/07/13 初版発行
+
+
+著者
+
+:   あやふや
+
+発行
+
+:  Telecocoon, Ltd.
+https://telecocoon.netlify.com
+
+
+組版
+
+: vivliostyle-jppb
+https://github.com/ayhy/vivliostyle-jppb
+
+
+<!--実際に印刷する時は以下をコメントアウトする。
+
+印刷
+
+:  XX
+
+-->
+
+::: {.note}
+電子版なので乱丁落丁の代わりに誤字脱字があります。ご容赦ください。
+:::

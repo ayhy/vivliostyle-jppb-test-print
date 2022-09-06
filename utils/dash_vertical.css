@@ -1,0 +1,20 @@
+.dashline{
+    transform:scale(1.0,2.0);
+    transform-origin: top center;
+    visibility: visible;
+    -ms-transform:scale(1.0,2.0); /* IE 9 */
+    -moz-transform:scale(1.0,2.0); /* Firefox */
+    -webkit-transform:scale(1.0,2.0); /* Safari and Chrome */
+    -o-transform:scale(1.0,2.0); /* Opera */
+    display: inline-block;
+    margin-top:1px;
+    margin-bottom:1px;
+  }
+
+.dash{
+	white-space:nowrap;
+	overflow:hidden;
+}	
+
+/* needs to be paired with elongate_dash.lua */
+/* "――" will now be converted to "[[―]{.dashline}　]{.dash}" */

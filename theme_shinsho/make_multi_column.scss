@@ -1,0 +1,45 @@
+@use "./_param.scss" as param;
+
+/*段組み部位のサイズ指定関連*/
+$columns: 2;
+$letters: 24;
+$rows: 18;
+$letter_size: param.$body_letter_size;
+$letter_spacing:0.2px;
+$line_height: param.$body_line_height;
+
+
+$additonal_margin: calc( ( param.$page_width - param.$lrmargin - param.$bindmargin - ($rows * $line_height) ) *0.5 );
+/*ページ幅 - 小口 - ノド - 行数x行間で、本文のマージンの余剰不足を計算*/
+
+$column_gap_val: (param.$page-height - param.$topmargin - param.$bottommargin - ($letters * $columns * ( $letter_size + $letter_spacing ) - $columns*$letter_spacing ))/($columns - 1);
+/*ページ高さ -天地 - 文字数x段落数x文字サイズx字間/(段落数-1) で必要な段落数を計算*/
+
+html {
+  font-family:'Gilda Display', 'GenEiChikuMin', serif;
+  /* 約物の調整、和欧文間スペース */
+  text-spacing: space-first allow-end ideograph-alpha ideograph-numeric;
+  
+  text-justify:  inter-character;
+  text-align: justify;
+
+}
+
+body{
+  column-count:$columns;
+  column-gap: $column_gap_val;
+  column-fill:auto;
+
+  font-size: $letter-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  margin-left:$additonal_margin;
+  margin-right:$additonal_margin;
+
+  text-align-last: left; /* paged media containerの左右への影響を避けるためここに書く */
+
+/* footnote関連 */
+@-adapt-footnote-area ::before {
+    display: none;
+}
+

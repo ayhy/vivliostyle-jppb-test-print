@@ -1,0 +1,6 @@
+<!-- 本によっては中扉前に謝辞(role=dedication)やエピグラフ（role-epigraph）などが入ることがあります -->
+
+# {role=dedication}
+合評会でご一緒した皆様に心より御礼申し上げます。
+
+# 文体操舵録 {role=halftitle}
