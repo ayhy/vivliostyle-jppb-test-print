@@ -1,0 +1,23 @@
+.dashline{
+    writing-mode: vertical-tb;
+    transform:scale(2.0,0.1.0);
+    transform-origin: center left;
+    visibility: visible;
+    -ms-transform:scale(2.0,1.0); /* IE 9 */
+    -moz-transform:scale(2.0,1.0); /* Firefox */
+    -webkit-transform:scale(2.0,1.0); /* Safari and Chrome */
+    -o-transform:scale(2.0,1.0); /* Opera */
+    display: inline-block;
+    margin-left:-3pt;
+  }  
+
+.dash{
+	white-space:nowrap;
+	overflow:hidden;
+}	
+
+/* needs to be paired with elongate_dash.lua */
+/* "――" will now be converted to "[[―]{.dashline}　]{.dash}" */
+
+/* can be used font family that does not support continuous dash line */
+/* margin-left can be tweaked */
