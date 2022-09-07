@@ -9,9 +9,12 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: vivliostyle/action@v1
+      - uses: actions/setup-node@v3
         with:
-          input: jppb/publication.json
-          cli-version: 5
-          artifact-name: book-win
-          if-no-files-found: error
+          node-version: 16
+      - run: npm i -g --ignore-scripts @vivliostyle/cli@5
+      - run: vivliostyle build jppb/publication.json -o book-windows.pdf --timeout 3000 --verbose
+      - uses: actions/upload-artifact@v2
+        with:
+          name: book-windows
+          path: book-windows.pdf
