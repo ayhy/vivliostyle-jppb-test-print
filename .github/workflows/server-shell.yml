@@ -1,4 +1,4 @@
-name: Vivliostyle build in Docker
+name: Vivliostyle build in Windows Server
 
 on:
   push:
