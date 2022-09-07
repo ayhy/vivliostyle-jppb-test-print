@@ -17,7 +17,7 @@ python generate_publication.py jppb/src.json
 vivliostyle preview jppb/publication.json
 ```
 ## Known Issues
-* ubuntu上のplaywrightでは`.inline-footnote`の挿入位置がずれます。
+* ubuntu上のplaywrightではchromiumのverが異なるため`.inline-footnote`の挿入位置がずれるほか、意図しない文字溢れが発生しています。さしあたりwindows serverを作って試験します。
 
 ## Licence
 [MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
