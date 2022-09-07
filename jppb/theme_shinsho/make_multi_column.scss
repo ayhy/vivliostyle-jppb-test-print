@@ -22,7 +22,6 @@ html {
   
   text-justify:  inter-character;
   text-align: justify;
-
 }
 
 body{
@@ -37,6 +36,7 @@ body{
   margin-right:$additonal_margin;
 
   text-align-last: left; /* paged media containerの左右への影響を避けるためここに書く */
+}
 
 /* footnote関連 */
 @-adapt-footnote-area ::before {

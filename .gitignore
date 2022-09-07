@@ -1,6 +1,7 @@
 *.lnk
 *.tmp
 *.pdf
+*.zip
 *_wip.*
 git
 node_modules
