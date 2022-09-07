@@ -10,8 +10,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: docker build . --file Dockerfile --tag my-image
-    - run: docker run --rm -v $(pwd)/book:/app my-image yarn
-    - run: docker run --rm -v $(pwd)/book:/app my-image yarn build
+    - run: docker run --rm -v $(pwd)/jppb:/app my-image yarn
+    - run: docker run --rm -v $(pwd)/jppb:/app my-image yarn build
     - uses: actions/upload-artifact@v2
       with:
         name: book
