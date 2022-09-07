@@ -1,6 +1,6 @@
 # vivliostyle-jppb-test-print
 - [DockerによるPDFビルド](https://qiita.com/suzuki_sh/items/03bd86909a47323cbfa3)を[vivliostyle-jppb](https://github.com/ayhy/vivliostyle-jppb)でやってみた自動pdfビルドリポジトリです。`serverbuild`ブランチ(ここにpushするとwindows serverによるビルドを行う)、`dockerbuild`(ここにpushするとubuntuによるビルドを行う)があります。
-
+- 特に理由がない限り、速くて安い方の`dockerbuild`へのpushを推奨します。
 
 
 ### 使い方
@@ -21,24 +21,20 @@ git add .
 git commit -m "changed book content"
 ```
 
-* Push前に本文がちゃんと見えているか確認(任意)
+* Push前に本文がちゃんとできているか確認(任意)
 ```
 vivliostyle preview publication.json
+```
+
+（推奨）Ubuntuのdockerコンテナの場合は`dockerbuild`でビルドされるので
+```
+git push origin serverbuild
 ```
 
 Windows serverでpdfが必要な場合は`serverbuild`でビルドされるので
 ```
 git push origin serverbuild
 ```
-
-Ubuntuのdockerコンテナの場合は`dockerbuild`でビルドされるので
-```
-git push origin serverbuild
-```
-
-
-## Known Issues
-* ubuntu上のplaywrightではchromiumのverが異なるためか`.inline-footnote`の挿入位置がずれるほか、意図しない文字溢れが発生しています。ci時間が二倍になりますが、`serverbuild`にプッシュしてwindows serverを使うのを推奨します。
 
 ## Licence
 [MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
