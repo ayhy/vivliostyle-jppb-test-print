@@ -26,12 +26,12 @@ git commit -m "changed book content"
 vivliostyle preview publication.json
 ```
 
-（推奨）Ubuntuのdockerコンテナの場合は`dockerbuild`でビルドされるので
+（推奨）Ubuntuのdockerコンテナの場合は`dockerbuild`へのpushでビルドされるので
 ```
-git push origin serverbuild
+git push origin dockerbuild
 ```
 
-Windows serverでpdfが必要な場合は`serverbuild`でビルドされるので
+Windows serverでpdfが必要な場合は`serverbuild`へのpushでビルドされるので
 ```
 git push origin serverbuild
 ```
