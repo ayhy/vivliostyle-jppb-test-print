@@ -14,11 +14,8 @@ RUN apt-get update && apt-get install -y \
   libasound-dev \
   fonts-ipaexfont \
  && apt-get clean \
- && apt purge pandoc \
- && wget https://github.com/jgm/pandoc/releases/download/2.19.2/pandoc-2.19.2-1-amd64.deb \
- && dpkg -x pandoc-2.19.2-1-amd64.deb $HOME \
  && rm -rf /var/lib/apt/lists/*
 
-COPY book/package.json .
-COPY book/yarn.lock .
+COPY jppb/package.json .
+#COPY jppb/yarn.lock .
 RUN yarn

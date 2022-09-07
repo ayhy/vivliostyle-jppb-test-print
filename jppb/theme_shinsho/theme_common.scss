@@ -789,37 +789,38 @@ section[role='colophon'] {
 /* multi-column footnote 段組を貫通しない脚注 */
 /* @footnoteが整備されるまでのworkaround
    workaroundのため内部に別のタグが必要 - <em>や<span>など */
-.incolumn_footnote {
-  counter-increment: footnote;
-  &::before{ /* ::footnote-marker相当 - 本文側 */
-    /*background-color: red;*/
-    text-combine-upright: all;
-    font-weight: bold;
-    content: "[" counter(footnote) "]";
-    text-align: center;
-    vertical-align: bottom;
-    margin-top:0.0rem;
-    margin-bottom:0.0rem;
-    font-size: 75%;
+   .incolumn_footnote {
+    counter-increment: footnote;
+    &::before{ /* ::footnote-marker相当 - 本文側 */
+      /*background-color: red;*/
+      text-combine-upright: all;
+      font-weight: bold;
+      content: "[" counter(footnote) "]";
+      text-align: center;
+      vertical-align: bottom;
+      margin-top:0.0rem;
+      margin-bottom:0.0rem;
+      font-size: 75%;
+    }
+    & >*::before{ /* ::footnote-call相当 - 脚注側 */
+      /*background-color: blue;*/
+      content: "[" counter(footnote) "]";
+      text-combine-upright: all;
+      text-align: center;
+      margin-top: 0rem;
+      font-size: 75%;
+    }
+    &> * {
+      font-weight: normal;
+      font-style: normal;
+      float-reference: column;
+      float: block-end;
+      margin-block-start: 0.1em; /*本文-脚注間隔、狭め*/
+      /*background: lime;*/
+      font-size:75%;     /*脚注サイズ*/
+      line-height:1.7em; /*脚注行間、、狭め*/
+    }
   }
-  & >*::before{ /* ::footnote-call相当 - 脚注側 */
-    /*background-color: blue;*/
-    content: "[" counter(footnote) "]";
-    text-combine-upright: all;
-    text-align: center;
-    margin-top: 0rem;
-    font-size: 75%;
-  }
-  &> * {
-    font-weight: normal;
-    font-style: normal;
-    float-reference: column;
-    float: block-end;
-    padding-block-start: 0.5em;
-    /*background: lime;*/
-    font-size: 75%;
-  }
-}
 
 /* 傍点（・） */
 .dotted {

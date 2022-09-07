@@ -9,74 +9,124 @@
   "name":"文体操舵記録",
   "readingOrder":[
     {
-      "url":"00titlepage.html",
+      "url":"test00titlepage.html",
       "name":"表題",
       "category":"pre_toc"
     },
     {
-      "url":"01toc.html",
+      "url":"test01toc.html",
       "name":"目次",
       "category":"toc",
       "rel":"contents",
       "type":"LinkedResource"
     },
     {
-      "url":"02halftitle.html",
+      "url":"test02halftitle.html",
       "name":"中扉",
       "category":"post_toc"
     },
     {
-      "url":"03ch1.html",
+      "url":"test03ch1.html",
       "name":"自分の文のひびき",
       "category":"body"
     },
     {
-      "url":"03ch2.html",
-      "name":"句読点と文法",
+      "url":"test03ch2.html",
+      "name":"視点と語りの声2",
       "category":"body"
     },
     {
-      "url":"03ch3.html",
-      "name":"文の長さと複雑な表現",
+      "url":"test03ch3.html",
+      "name":"視点と語りの声3",
       "category":"body"
     },
     {
-      "url":"03ch4.html",
-      "name":"繰り返し表現",
+      "url":"test03ch4.html",
+      "name":"視点と語りの声4",
       "category":"body"
     },
     {
-      "url":"03ch5.html",
-      "name":"形容詞と副詞",
+      "url":"test03ch5.html",
+      "name":"視点と語りの声5",
       "category":"body"
     },
     {
-      "url":"03ch6.html",
-      "name":"人称と時制",
+      "url":"test03ch6.html",
+      "name":"視点と語りの声6",
       "category":"body"
     },
     {
-      "url":"03ch7.html",
-      "name":"視点と語りの声",
+      "url":"test03ch7.html",
+      "name":"視点と語りの声7",
       "category":"body"
     },
     {
-      "url":"03ch8.html",
-      "name":"視点人物の切り替え",
+      "url":"test03ch8.html",
+      "name":"視点と語りの声8",
       "category":"body"
     },
     {
-      "url":"03ch9.html",
-      "name":"直接言わない語り",
+      "url":"test03ch9.html",
+      "name":"視点と語りの声9",
       "category":"body"
     },
     {
-      "url":"03ch10.html",
-      "name":"詰め込みと跳躍",
+      "url":"test03ch10.html",
+      "name":"視点と語りの声10",
       "category":"body"
     },
     {
-      "url":"99_backmatter.html",
+      "url":"test03ch11.html",
+      "name":"視点と語りの声11",
+      "category":"body"
+    },
+    {
+      "url":"test03ch12.html",
+      "name":"視点と語りの声12",
+      "category":"body"
+    },
+    {
+      "url":"test03ch13.html",
+      "name":"視点と語りの声13",
+      "category":"body"
+    },
+    {
+      "url":"test03ch14.html",
+      "name":"視点と語りの声14",
+      "category":"body"
+    },
+    {
+      "url":"test03ch15.html",
+      "name":"視点と語りの声15",
+      "category":"body"
+    },
+    {
+      "url":"test03ch16.html",
+      "name":"視点と語りの声16",
+      "category":"body"
+    },
+    {
+      "url":"test03ch17.html",
+      "name":"視点と語りの声17",
+      "category":"body"
+    },
+    {
+      "url":"test03ch18.html",
+      "name":"視点と語りの声18",
+      "category":"body"
+    },
+    {
+      "url":"test03ch19.html",
+      "name":"視点と語りの声19",
+      "category":"body"
+    },
+    {
+      "url":"test03ch20.html",
+      "name":"視点と語りの声20",
+      "category":"body"
+    },
+    {
+      "url":"test99_backmatter.html",
       "name":"奥付",
       "category":"backmatter"
     }
